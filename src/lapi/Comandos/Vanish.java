@@ -24,6 +24,7 @@ public class Vanish implements CommandExecutor {
                 if (args.length == 0) {
                     if(!vanish.contains(p)) {
                         for (Player players : Bukkit.getOnlinePlayers()) {
+                            if (!players.hasPermission("lapi.vanish"))
                             players.hidePlayer(p);
                         }
                         vanish.add(p);
