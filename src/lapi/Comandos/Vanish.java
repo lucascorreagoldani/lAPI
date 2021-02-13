@@ -28,14 +28,14 @@ public class Vanish implements CommandExecutor {
                             players.hidePlayer(p);
                         }
                         vanish.add(p);
-                        p.sendMessage("§aAgora você está invisivel para todos os jogadores.");
+                        p.sendMessage("§eInvisibilidade ativada.");
                         return true;
                     }else {
                         for (Player players : Bukkit.getOnlinePlayers()) {
                             players.showPlayer(p);
                         }
                         vanish.remove(p);
-                        p.sendMessage("§aAgora você está visivel para todos os jogadores.");
+                        p.sendMessage("§eInvisibilidade desativada.");
                     }
                 }
             }
