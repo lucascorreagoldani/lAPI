@@ -1,16 +1,20 @@
 package lapi.Comandos;
 
+import java.util.ArrayList;
+
+import lapi.Sistemas.VanishListener;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
-
 public class Vanish implements CommandExecutor {
 
     public static ArrayList<Player> vanish = new ArrayList<>();
+    static {
+        vanish = new ArrayList<Player>();
+    }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -29,9 +33,9 @@ public class Vanish implements CommandExecutor {
                         }
                         vanish.add(p);
                         p.sendMessage("§eInvisibilidade ativada.");
-                        return true;
                     }else {
                         for (Player players : Bukkit.getOnlinePlayers()) {
+                            if (!players.hasPermission("lapi.vanish"))
                             players.showPlayer(p);
                         }
                         vanish.remove(p);
@@ -42,4 +46,9 @@ public class Vanish implements CommandExecutor {
         }
         return false;
     }
+
+    private boolean getVanish(Player p) {
+        return VanishListener.vanish.contains(p);
+    }
+
 }

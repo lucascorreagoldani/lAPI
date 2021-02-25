@@ -10,27 +10,18 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/Servidor/Lobby/spigot.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/Dependências/Spigot.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://$USER_HOME$/Desktop/Servidor/Lobby/spigot.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/Dependências/Spigot.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/Servidor/Lobby/plugins/ActionBarAPI.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/Servidor/Lobby/plugins/PermissionsEx.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/Dependências/PermissionsEx.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

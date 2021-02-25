@@ -5,3 +5,5 @@ author: Lucas
 commands:
   vanish:
     aliases: [v]
+  invsee:
+    aliases: [inv]

@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="lAPI">
-    <output-path>$USER_HOME$/Desktop/Servidor/Lobby/plugins</output-path>
+    <output-path>$USER_HOME$/Desktop/Servidor/Factions/plugins</output-path>
     <root id="archive" name="lAPI.jar">
       <element id="module-output" name="lAPI" />
     </root>
