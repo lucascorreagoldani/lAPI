@@ -12,7 +12,6 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        instance = this;
         Bukkit.getPluginManager().registerEvents(new VanishListener(), this);
         Bukkit.getPluginManager().registerEvents(new Invsee(), this);
         getCommand("vanish").setExecutor(new Vanish());
@@ -21,5 +20,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
+
     }
+
 }
