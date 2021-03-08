@@ -37,10 +37,9 @@ public class Find implements CommandExecutor {
                     p.sendMessage("  §fPrefixos: " + PermissionEX.getPrefix(t));
                     p.sendMessage("§cStatus: ");
                     p.sendMessage("  §fServidor: " + t.getWorld().getName());
-                    p.sendMessage("\n");
                     return true;
-                }
-                if (args.length == 0) {
+                   }
+                  if (args.length == 0) {
                     Player player = (Player) sender;
                     p.sendMessage("§cPerfil: ");
                     p.sendMessage("  §fID: 1");
@@ -51,7 +50,6 @@ public class Find implements CommandExecutor {
                     p.sendMessage("  §fPrefixos: " + PermissionEX.getPrefix(player));
                     p.sendMessage("§cStatus: ");
                     p.sendMessage("  §fServidor: " + player.getWorld().getName());
-                    p.sendMessage("\n");
                     return true;
                 }
             }
